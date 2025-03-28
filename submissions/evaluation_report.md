@@ -37,7 +37,7 @@ try {
   // Demonstrating the failure of the proposed solution
 const newHiddenInput = document.createElement('input')
    .setAttribute('type', 'hidden')
-   .setAttribute('name', key) //Expect error; Error: TypeError: Cannot read properties of undefined (reading 'setAttribute')
+   .setAttribute('name', key) //Expect error; Proof of failure: TypeError: Cannot read properties of undefined (reading 'setAttribute')
    .setAttribute('value', results[key]);
 } catch (error) {
   console.log('Proof of failure:', error);

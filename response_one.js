@@ -10,5 +10,5 @@ try {
     .setAttribute('name', key)
     .setAttribute('value', results[key]);
 } catch (error) {
-  console.error('Error:', error);
+  console.error('Proof of failure:', error);
 }
